@@ -1,0 +1,22 @@
+Comandos p/ Strings:
+    .capitalize() --> Frases/Palavras tem a primeira letra maiúscula e as outras em minúsculas
+    .strip() --> Remove espaços em branco no início e no final ou caractéres
+    .count() --> Quantas vezes aparece uma determinada variável
+    .replace() --> Troca de lugar
+    .center() --> CentralizA
+    .find() --> Comando de busca
+
+assert --> verificação de condições
+
+x,y = 10,20
+x,y = y,x ==> troca os valores de y e x
+
+def func (x,y=10,z=5)
+    assert x >= 0 and y >= 0 and z >= 0
+    return x + y * z
+
+func(2) ==> R: 52
+func(,2,40) ==> R: ERRO
+func(1,2,3) ==> R: 7
+func() ==> R: ERRO
+

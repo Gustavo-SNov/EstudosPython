@@ -1,0 +1,18 @@
+Programação Orientada a Objetos
+
+=> Objetos = DADOS + CÓDIGOS
+
+=> Classes
+    ->Definem tipos dos Objetos
+    ->Definem quais os dados e o código dos Objetos
+
+=> Dados => atributos
+=> Código => métodos
+
+definir classe ==> class "nome":
+
+class Carro:
+    def __init__(self,modelo,ano,cor):
+        self.modelo = modelo
+        self.ano   = ano
+        self.cor   = cor

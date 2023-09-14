@@ -1,0 +1,67 @@
+Funções:
+        1)  partida()
+        2)  computador_escolhe_jogada()
+        3)  usuario_escolhe_jogada()
+        4)  campeonato()
+-----------------------------------------------------
+        Função 1
+            -->pergunta valor de n e m  --> FEITO!
+            -->decide quem comaça       --> FEITO!
+            -->atualiza o valor de n     --> FEITO!
+------------------------------------------------------
+        funções 2 e 3
+            -->Receber 2 parâmetros
+            -->Retornar o N° de peças removidas
+------------------------------------------------------
+        função 4
+            --> Chamar partida 3 vezes
+------------------------------------------------------
+
+Teste de Mesa
+
+1°  EU COMEÇO --> N % (M+1) == 0
+    JOGO: N=8 / M = 3
+        EU: P=3 -> N=5
+        CP: P=1 -> N=4
+        EU: (P=1 -> N=3) // (P=2 -> N=2) // (P=3 -> N=1)
+
+2°  CP COMEÇA
+    JOGO: N=8 / M=2
+    
+        CP: P=2 -> N=6
+        EU: (P=1 -> N=5) // (P=2 -> N=4)
+        CP: (P=2 -> N=3) // (P=1 -> N=3)
+        EU: ()
+
+ESCOLHA DO COMPUTADOR!
+    PLANO A: N=M 
+        P = M
+        N - P
+
+    PLANO B: M=1 
+        P = 1
+        N - P
+
+    PLANO C: N<M 
+        P = N
+        N - P
+
+    PLANO D:
+        D.1 (N-P) % (M+1) ==0 --> N-P
+            TESTE 1.1: P=1 / P=2
+                P=1 -->(4) % (4) CERTO
+                P=2 -->(3) % (4) ERRADO
+
+            TESTE 2.1:
+                P=1 -->(7) % (3) ERRADO
+                P=2 -->(6) % (3) CERTO
+            
+            TESTE 2.2: N=5
+                P=1 --> (4) % (3) ERRADO
+                P=2 --> (3) % (3) CERTO
+            
+            TESTE 2.3: N=4
+                P=1 --> (3) % (3) CERTO
+                P=2 --> (2) % (3) ERRADO
+
+        D.2 P=M -> N-P
